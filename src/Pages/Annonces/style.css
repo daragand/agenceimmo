@@ -1,0 +1,24 @@
+
+    section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 2rem;
+  gap: 2rem;
+}
+.annonce {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.annonce:hover {
+  scale: 1px;
+}
+.vosannonces h3{
+  font-size:3rem;
+}
+
+.annonce img {
+  width: 15rem;
+}

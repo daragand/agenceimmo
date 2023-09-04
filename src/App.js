@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Accueil from "./Pages/Accueil/Accueil";
+import Template from "./Partials/Template/Template";
+
+import Annonces from "./Pages/Annonces/Annonces";
+import AnnonceDetail from "./Pages/Detail/Detail";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Template />}>
+            <Route exact path="/" element={<Accueil />} />
+            <Route exact path="/detail/:id" element={<AnnonceDetail />} />
+            <Route exact path="/annonces" element={<Annonces />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

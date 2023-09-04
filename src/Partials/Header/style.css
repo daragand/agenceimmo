@@ -1,0 +1,24 @@
+h2 {
+    color:red;
+    text-align: left;
+}
+#menu{
+    text-align:right;
+    margin: 2rem 0 0 2rem;
+
+}
+.header h2{
+    width:50%;
+}
+.header{
+    background-color: rgb(155, 222, 224);
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 1.5rem;
+    padding:3rem;
+}
+.navigation{
+    background-color: azure;
+    padding:1rem;
+    margin-left: 1rem;
+}
